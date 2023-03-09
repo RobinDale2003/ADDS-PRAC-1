@@ -1,22 +1,22 @@
 #include "Player.h"
 #include "Human.h"
 #include "Computer.h"
-//#include "Referee.h"
+#include "Referee.h"
 #include <stdio.h>
 #include <iostream>
 #include <string.h>
 
 int main(void) {
-Human *human1;
-Computer *computer1;
+int result;
 
-//human1 = new Human("Jeff",'P');
-human1 = new Human();
-computer1 = new Computer();
+Human *player1;
+Computer *player2;
+Referee *ref1;
 
-std::cout << human1->getName() << std::endl;
-//std::cout << human1->makeMove() << std::endl;
-std::cout << computer1->getName() << std::endl;
-//std::cout << computer1->makeMove() << std::endl;
+player1 = new Human("Jeff",'P');
+player2 = new Computer();
+ref1 = new Referee();
+ref1->refGame(player1, player2);
+
 return 0;
 }
