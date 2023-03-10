@@ -4,6 +4,9 @@
 #include <string>
 #include <stdio.h>
 class Human: public Player {
+    private:
+    std::string name;
+    char move;
     public:
     Human();
     Human(std::string newName);

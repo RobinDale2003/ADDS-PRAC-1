@@ -16,9 +16,5 @@ char Human::makeMove()
 {
     std::cout << "Make Move:";
     std::cin >> move;
-    /*while (move =! 'R' || 'P' || 'S') {
-    std::cout << "Invalid:";
-    std::cin >> move;
-    }*/
     return move;
 };

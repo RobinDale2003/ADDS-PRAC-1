@@ -6,12 +6,7 @@
 
 class Player {
     public:
-    std::string name;
-    char move;
-    Player();
-    Player(std::string newName);
-
-    virtual char makeMove() =0;
-    virtual std::string getName() =0;
+        virtual char makeMove() =0;
+        virtual std::string getName() =0;
 };
 #endif

@@ -7,21 +7,18 @@ Referee::Referee()
     name = "referee";
 }
 Player * Referee::refGame(Player * player1, Player * player2) {
-player1->makeMove();
-    switch(player1->move) { 
-        case 'R': 
-            std::cout << player1->name << " Wins" << std::endl;
-            return player1;
-            break;
-        case 'P': 
-            std::cout << "It's A Tie" << std::endl;
-            return nullptr;
-            break;
-        case 'S': 
-            std::cout << "Computer Wins" << std::endl; 
-            return player2;   
-            break;
-    
-    }
-return nullptr;
+char player1move = player1->makeMove();
+char player2move = player2->makeMove();
+if (player1move == player2move) {
+    return nullptr;
+}
+else if (player1move == 'P' && player2move == 'R') {
+    return player1;
+}
+else if (player1move == 'S' && player2move == 'R') {
+    return player2;
+}
+else {
+    return nullptr;
+}
 };

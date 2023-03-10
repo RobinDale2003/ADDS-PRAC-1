@@ -7,13 +7,12 @@
 #include <string.h>
 
 int main(void) {
-int result;
 
 Human *player1;
 Computer *player2;
 Referee *ref1;
 
-player1 = new Human("Jeff",'P');
+player1 = new Human("Jeff");
 player2 = new Computer();
 ref1 = new Referee();
 ref1->refGame(player1, player2);
