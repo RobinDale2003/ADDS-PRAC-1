@@ -3,8 +3,8 @@
 #define Computer_H
 class Computer: public Player{
     public:
-    Computer();
-    char makeMove() {return move;};
-    std::string getName() {return name;};
+        Computer();
+        char makeMove();
+        std::string getName();
 };
 #endif

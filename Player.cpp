@@ -1,11 +1,9 @@
 #include "Player.h"
 Player::Player()
-{
+    {
     name = "Human";
-    move = '\0';
-}
-Player::Player(std::string newName, char playerMove)
-{
+    }
+Player::Player(std::string newName)
+    {
     name = newName;
-    move = playerMove;
-}
+    }

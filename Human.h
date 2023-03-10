@@ -6,6 +6,8 @@
 class Human: public Player {
     public:
     Human();
-    Human(std::string newName, char playerMove);
+    Human(std::string newName);
+    char makeMove();
+    std::string getName();
 };
 #endif

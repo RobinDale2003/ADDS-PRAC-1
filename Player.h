@@ -9,10 +9,9 @@ class Player {
     std::string name;
     char move;
     Player();
-    Player(std::string newName, char playerMove);
+    Player(std::string newName);
 
-    char makeMove() {return move;};
-    std::string getName() {return name;};
-
+    virtual char makeMove() =0;
+    virtual std::string getName() =0;
 };
 #endif

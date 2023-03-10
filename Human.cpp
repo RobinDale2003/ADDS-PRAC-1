@@ -3,10 +3,22 @@
 Human::Human()
 {
     name = "Human";
-    move = '\0';
 }
-Human::Human(std::string newName, char playerMove)
+Human::Human(std::string newName)
 {
     name = newName;
-    move = playerMove;
 }
+std::string Human::getName() 
+{
+    return name;
+};
+char Human::makeMove()
+{
+    std::cout << "Make Move:";
+    std::cin >> move;
+    /*while (move =! 'R' || 'P' || 'S') {
+    std::cout << "Invalid:";
+    std::cin >> move;
+    }*/
+    return move;
+};

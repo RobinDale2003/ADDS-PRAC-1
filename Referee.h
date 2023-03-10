@@ -5,25 +5,11 @@
 #include <stdio.h>
 
 class Referee{
-    public:
+    private:
     std::string name;
+    public:
     Referee(); // constructor
-
-    Player * refGame(Player * player1, Player * player2) {
-    std::cout << "Game in session" << std::endl;
-    switch(player1->move) { 
-        case 'R': 
-            std::cout << "Tie" << std::endl;
-            break;
-        case 'P': 
-            std::cout << "Win" << std::endl;
-            break;
-        case 'S': 
-            std::cout << "Lose" << std::endl;    
-            break;
-    }
-return player1;
-};
+    Player * refGame(Player * player1, Player * player2);
 };
 
 // returns the reference to the winning player
