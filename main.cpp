@@ -16,6 +16,4 @@ player1 = new Human("Jeff");
 player2 = new Computer();
 ref1 = new Referee();
 ref1->refGame(player1, player2);
-
-return 0;
-}
+};

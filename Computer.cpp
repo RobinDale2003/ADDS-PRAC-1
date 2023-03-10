@@ -4,5 +4,12 @@ Computer::Computer()
 {
     name = "Computer";
 }
-char Computer::makeMove() {return 'R';};
-std::string Computer::getName() {return name;};
+char Computer::makeMove()
+{
+    move = 'R';
+    return move;
+};
+std::string Computer::getName()
+{
+    return name;
+};
